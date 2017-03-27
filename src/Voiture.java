@@ -6,6 +6,7 @@ public class Voiture {
 	private String energie;
 	private int vitesseMax;
 	private String typeTrsprt;
+	private String typeSport;
 
 	//constructeur vide
 	public Voiture(){
@@ -15,6 +16,8 @@ public class Voiture {
 		energie = "Inconnu";
 		vitesseMax = 0;
 		this.setTypeTrsprt();
+		this.setTypeSport();
+		
 	}
 	
 	//constructeur initialisé
@@ -25,6 +28,7 @@ public class Voiture {
 	this.energie = energie;
 	this.vitesseMax = vitesseMax;
 	this.setTypeTrsprt();
+	this.setTypeSport();
 	}
 	
 	//méthode qui compare l'objet pour voir s'il est plus rapide
@@ -37,6 +41,8 @@ public class Voiture {
 		return voiturePlusRapide;
 		
 	}
+	
+	
 	
 	//accesseurs
 	public int getNbOccupants(){
@@ -53,6 +59,10 @@ public class Voiture {
 	}
 	public String getTypeTrsprt(){
 		return typeTrsprt;
+	}
+	
+	public String getTypeSport(){
+		return typeSport;
 	}
 	//mutateur
 	public void setEnergie(String energie){
@@ -74,10 +84,19 @@ public class Voiture {
 			this.typeTrsprt = "En commun";
 		}
 	}
+	public void setTypeSport(){
+		if(this.vitesseMax>100){
+			this.typeSport = "Voiture de sport";
+		}else{
+			this.typeSport = "Berline";
+		}
+	}
+	
+	}
 	
 	
 	
 	
 	
 	
-}
+	
