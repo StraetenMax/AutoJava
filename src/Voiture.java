@@ -5,6 +5,7 @@ public class Voiture {
 	private String couleur;
 	private String energie;
 	private int vitesseMax;
+	private String typeTrsprt;
 
 	//constructeur vide
 	public Voiture(){
@@ -13,6 +14,7 @@ public class Voiture {
 		couleur = "Inconnu";
 		energie = "Inconnu";
 		vitesseMax = 0;
+		this.setTypeTrsprt();
 	}
 	
 	//constructeur initialisé
@@ -22,6 +24,7 @@ public class Voiture {
 	this.couleur = couleur;
 	this.energie = energie;
 	this.vitesseMax = vitesseMax;
+	this.setTypeTrsprt();
 	}
 	
 	//accesseurs
@@ -37,6 +40,9 @@ public class Voiture {
 	public int getVitesseMax(){
 		return vitesseMax;
 	}
+	public String getTypeTrsprt(){
+		return typeTrsprt;
+	}
 	//mutateur
 	public void setEnergie(String energie){
 		 this.energie = energie;
@@ -49,6 +55,13 @@ public class Voiture {
 	}
 	public void setNbOccupants(int nbOccupants){
 		this.nbOccupants = nbOccupants;
+	}
+	public void setTypeTrsprt(){
+		if(this.nbOccupants<6){
+			this.typeTrsprt = "Particulier";
+		}else{
+			this.typeTrsprt = "En commun";
+		}
 	}
 	
 	
