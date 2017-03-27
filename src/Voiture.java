@@ -27,6 +27,17 @@ public class Voiture {
 	this.setTypeTrsprt();
 	}
 	
+	//méthode qui compare l'objet pour voir s'il est plus rapide
+	public boolean plusRapide(Voiture v1){
+		boolean voiturePlusRapide = false;
+		if(v1.getVitesseMax()>this.getVitesseMax())
+		voiturePlusRapide = false;
+		else
+		voiturePlusRapide = true;
+		return voiturePlusRapide;
+		
+	}
+	
 	//accesseurs
 	public int getNbOccupants(){
 		return nbOccupants;	

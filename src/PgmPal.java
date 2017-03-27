@@ -17,6 +17,14 @@ public class PgmPal {
 		System.out.println(voiture4.getVitesseMax());
 		System.out.println(voiture4.getTypeTrsprt());
 		System.out.println(voiture2.getTypeTrsprt());
+		
+		Voiture V1 = new Voiture(3,"Jaune","Hydrogène",50);
+		Voiture V = new Voiture(4,"Bleu","Essence",170);
+		Voiture V2 = new Voiture(40,"Rouge","Diesel",100);
+		Voiture V3 = new Voiture(2,"Vert", "Electricité",20);
+		System.out.println(V3.plusRapide(V2));
+		System.out.println(V1.plusRapide(V));
+		System.out.println(V1.plusRapide(V3));
 	}
 
 }
