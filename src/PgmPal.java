@@ -7,14 +7,14 @@ public class PgmPal {
 		Voiture voiture3 = new Voiture();
 		Voiture voiture4 = new Voiture(6, "Rouge", "Diesel", 200);
 		//variables d'instance
-		voiture4.couleur= "Bleu citron"; // modification des variables instance public
-		System.out.println(voiture4.couleur);
-		voiture2.energie = "électrique"; //modification VI public
-		System.out.println(voiture2.energie);
-		voiture4.nbOccupants = 22; //modification VI public
-		System.out.println(voiture4.nbOccupants);
-		voiture4.vitesseMax = 88; //modification VI public
-		System.out.println(voiture4.vitesseMax);
+		voiture4.setCouleur("Bleu citron"); // modification des variables instance public
+		System.out.println(voiture4.getCouleur());
+		voiture2.setEnergie("électrique"); // modification VI public
+		System.out.println(voiture2.getEnergie());
+		voiture4.setNbOccupants(22); // modification VI public
+		System.out.println(voiture4.getNbOccupants());
+		voiture4.setVitesseMax(88); // modification VI public
+		System.out.println(voiture4.getVitesseMax());
 	}
 
 }
