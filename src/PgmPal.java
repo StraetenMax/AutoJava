@@ -39,6 +39,8 @@ public class PgmPal {
 		System.out.println(voiture4.getNombreInstanceClasses());
 		System.out.println(V3.getNombreInstance());
 		System.out.println(V3.getNombreInstanceClasses());
+		VoitureSport voit = new VoitureSport();
+		System.out.println(voit.getNbOccupants());
 	}
 
 }
