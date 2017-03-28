@@ -1,7 +1,7 @@
 
 public class Auto {
 
-	//propriétés de la classe voiture
+	//propriétés de la classe auto
 		private int nbOccupants;
 		private String couleur;
 		private String energie;
@@ -32,11 +32,10 @@ public class Auto {
 		this.energie = energie;
 		this.vitesseMax = vitesseMax;
 		this.setTypeTrsprt();
-		this.setTypeSport();
 		}
 		
 		//méthode qui compare l'objet pour voir s'il est plus rapide
-		public boolean plusRapide(Voiture v1){
+		public boolean plusRapide(Auto v1){
 			boolean voiturePlusRapide = false;
 			if(v1.getVitesseMax()>this.getVitesseMax())
 			voiturePlusRapide = false;
@@ -49,6 +48,15 @@ public class Auto {
 		
 		
 		//accesseurs
+		
+		public int getNombreInstances(){
+			return nbreInstances;
+		}
+		
+		public int getNombreInstancesClasses(){
+			return nbreInstancesClasse;
+		}
+		
 		public int getNbOccupants(){
 			return nbOccupants;	
 		}
@@ -65,9 +73,6 @@ public class Auto {
 			return typeTrsprt;
 		}
 		
-		public String getTypeSport(){
-			return typeSport;
-		}
 		//mutateur
 		public void setEnergie(String energie){
 			 this.energie = energie;
@@ -86,13 +91,6 @@ public class Auto {
 				this.typeTrsprt = "Particulier";
 			}else{
 				this.typeTrsprt = "En commun";
-			}
-		}
-		public void setTypeSport(){
-			if(this.vitesseMax>100){
-				this.typeSport = "Voiture de sport";
-			}else{
-				this.typeSport = "Berline";
 			}
 		}
 		

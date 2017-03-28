@@ -6,6 +6,8 @@ public class PgmPal {
 		Voiture voiture2 = new Voiture(4, "Bleu", "Essence", 170);
 		Voiture voiture3 = new Voiture();
 		Voiture voiture4 = new Voiture(12, "Rouge", "Diesel", 200);
+		Auto voiture21 = new Auto(2, "vert canard", "Air comprimé", 20);
+		Auto voiture22 = new Auto(3,"rouge cerise", "Eau", 23);
 		//variables d'instance
 		voiture4.setCouleur("Bleu citron"); // modification des variables instance private
 		System.out.println(voiture4.getCouleur());
@@ -29,6 +31,11 @@ public class PgmPal {
 		System.out.println(V.getTypeSport());
 		voiture2.setVitesseMax(20);
 		System.out.println(voiture2.getTypeSport());
+		System.out.println(voiture21.getNombreInstances());
+		System.out.println(voiture21.getNombreInstancesClasses());
+		System.out.println(voiture22.getNombreInstances());
+		System.out.println(voiture22.getNombreInstancesClasses());
+		
 	}
 
 }
