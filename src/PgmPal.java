@@ -35,7 +35,10 @@ public class PgmPal {
 		System.out.println(voiture21.getNombreInstancesClasses());
 		System.out.println(voiture22.getNombreInstances());
 		System.out.println(voiture22.getNombreInstancesClasses());
-		
+		System.out.println(voiture4.getNombreInstance());
+		System.out.println(voiture4.getNombreInstanceClasses());
+		System.out.println(V3.getNombreInstance());
+		System.out.println(V3.getNombreInstanceClasses());
 	}
 
 }

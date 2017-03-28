@@ -7,6 +7,8 @@ public class Voiture {
 	private int vitesseMax;
 	private String typeTrsprt;
 	private String typeSport;
+	private int nbreInstance = 0;
+	private static int nbreInstanceClasse = 0;
 
 	//constructeur vide
 	public Voiture(){
@@ -17,6 +19,8 @@ public class Voiture {
 		vitesseMax = 0;
 		this.setTypeTrsprt();
 		this.setTypeSport();
+		nbreInstance++;
+		nbreInstanceClasse++;
 		
 	}
 	
@@ -64,6 +68,15 @@ public class Voiture {
 	public String getTypeSport(){
 		return typeSport;
 	}
+	
+	public int getNombreInstance(){
+		return nbreInstance;
+	}
+	
+	public int getNombreInstanceClasses(){
+		return nbreInstanceClasse;
+	}
+	
 	//mutateur
 	public void setEnergie(String energie){
 		 this.energie = energie;
