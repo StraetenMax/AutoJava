@@ -46,7 +46,10 @@ public class Voiture {
 		
 	}
 	
-	
+	//utilisation de super dans les methodes
+	public String description(){
+		String str = "Je suis une voiture pour "+this.getNbOccupants()+" personnes, de couleur "+
+	}
 	
 	//accesseurs
 	public int getNbOccupants(){
